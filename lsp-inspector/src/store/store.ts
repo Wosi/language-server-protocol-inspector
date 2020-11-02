@@ -162,7 +162,7 @@ function itemMatchesCategoryFilter(item: LspItem, filter: CategoryFilter) {
   const msgTypeMap: { [key in CategoryFilter]: string[] } = {
     all: [],
     general: ['initialize', 'initialized', 'shutdown', 'exit', '$/cancelRequest'],
-    window: ['window/showMessage', 'window/showMessageRequest', 'window/logMessage'],
+    window: ['window/showMessage', 'window/showMessageRequest', 'window/logMessage', 'window/workDoneProgress/cancel', 'window/workDoneProgress/create'],
     telemetry: ['telemetry/event'],
     client: ['client/registerCapability', 'client/unregisterCapability'],
     workspace: [
